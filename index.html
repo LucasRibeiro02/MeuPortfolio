@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Ribeiro</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#home" class="logo">Lucas
+        <span>Ribeiro</span></a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">Sobre</a>
+            <a href="#services">Projetos</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+
+        <div class="home-content">
+            <h1>Olá, eu sou <span>Lucas Ribeiro</span></h1>
+            <h3>Desenvolvedor <span>Fullstack</span></h3>
+            <p>
+                
+                Transformo problemas reais em soluções eficientes, desenvolvendo sistemas e automatizando tarefas para otimizar processos e melhorar resultados.
+            </p>
+
+            <div class="social-icons">
+                <a href="#">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="#">
+                    <i class="bx bxl-linkedin-square"></i>
+                </a>
+                <a href="#">
+                    <i class="bx bxl-instagram-alt"></i>
+                </a>
+            </div>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Ver Projetos</a>
+                <a href="#contact" class="btn">Contato</a>
+            </div>
+
+        </div>
+        <div class="home-img">
+            <img src="perfil2.jpeg" alt="">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="perfil2.jpeg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2>Sobre <span>mim</span></h2>
+            <p>
+                
+                Sou <span>Lucas Ribeiro</span>, desenvolvedor em formação focado em criar soluções e automatizar processos.
+
+                <br>Tenho experiência com suporte técnico, o que me permite entender problemas reais e transformá-los em soluções eficientes.</br>
+
+                Busco evoluir constantemente e desenvolver projetos cada vez mais completos.
+            </p>
+            <a href="#" class="btn">Saiba mais</a>
+        </div>
+
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Principais <span>Projetos</span></h2>
+
+        <div class="project-slider-wrapper">
+            <button class="slider-arrow slider-arrow-left" type="button">
+                <i class="bx bx-chevron-left"></i>
+            </button>
+
+            <div class="project-slider" id="projectSlider">
+                <div class="project-slide">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <h3>Controle de Veículos</h3>
+                            <p>
+                                Aplicação desenvolvida para registrar KM de saída e chegada,
+                                destino, motorista e acompanhar dados operacionais de forma digital.
+                            </p>
+                            <span>Power Apps • SharePoint • Power BI</span>
+                        </div>
+
+                          <div class="project-image" data-project="veiculos" onclick="openProjectModal(this)">
+                            <img src="img/controleDeVeiculo.png" alt="Controle de Veículos">
+                            <div class="project-hover-btn">
+                              <button 
+                                  class="project-link-btn"
+                                  data-project="veiculos"
+                                  onclick="openProjectModal(this)">
+                                  Visualizar mais
+                              </button>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="project-slide">
+                    <div class="project-content">
+                        <div class="project-text">
+                          <h3 id="descricao">
+                            Sistema desenvolvido para automatizar o fluxo de solicitações de compras, eliminando processos manuais e retrabalho.
+                          </h3>
+
+                          <p>
+                            <span id="pontos">...</span>
+
+                            <span id="mais">
+                                A solução foi construída utilizando <span>Power Automate</span>, <span>Microsoft Approvals</span> e <span>Microsoft Teams</span>, permitindo que o usuário envie o orçamento em PDF diretamente por uma interface simples, informando apenas o gestor responsável.
+
+                                A partir disso, o fluxo automatizado:
+                                - Encaminha a solicitação automaticamente para aprovação  
+                                - Armazena o documento de forma segura na nuvem (OneDrive)  
+                                - Registra todo o histórico de aprovação  
+                                - Atualiza o status em tempo real  
+                                - Permite aprovação com um clique  
+                            </span>
+                          </p>
+
+                        
+                        <div class="ler-mais-container">
+                          <button onclick="toggleTexto()" id="btnLerMais">Ler mais</button>
+                        </div>
+
+                          <span>Power Automate • Approvals • Microsoft Teams</span>
+
+                          <div class="project-image" data-project="compras" onclick="openProjectModal(this)"></div>
+                        </div>
+
+                        <div class="project-image" data-project="compras" onclick="openProjectModal(this)">
+                          <img src="img/aprovacao7.png" alt="Automação de Aprovação de Compras">
+                          <div class="project-hover-btn">
+                            <button 
+                                class="project-link-btn"
+                                data-project="veiculos"
+                                onclick="openProjectModal(this)">
+                                  Visualizar mais
+                            </button>
+                          </div>
+</div>
+                    </div>
+                </div>
+
+                <div class="project-slide">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <h3>Site Institucional</h3>
+                            <p>
+                                Website responsivo com visual moderno para apresentação
+                                de serviços, identidade profissional e canais de contato.
+                            </p>
+                            <span>HTML • CSS • JavaScript</span>
+                        </div>
+
+                        <div class="project-image" data-project="chamados" onclick="openProjectModal(this)">
+                          <img src="img/chamados-capa.png" alt="Gestão de Chamados">
+                          <div class="project-overlay">
+                              <span>Ver mais detalhes</span>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="projectModal" class="project-modal">
+              <div class="project-modal-backdrop" onclick="closeProjectModal()"></div>
+
+              <div class="project-modal-box">
+                  <button class="project-modal-close" type="button" onclick="closeProjectModal()">
+                      <i class="bx bx-x"></i>
+                  </button>
+
+                  <h3 id="modalTitle"></h3>
+                  <p id="modalSubtitle"></p>
+
+                  <div id="modalGallery" class="project-modal-gallery"></div>
+              </div>
+          </div>
+
+
+            <button class="slider-arrow slider-arrow-right" type="button">
+                <i class="bx bx-chevron-right"></i>
+            </button>
+
+            <div class="slider-dots">
+                <button class="dot active" data-slide="0" type="button"></button>
+                <button class="dot" data-slide="1" type="button"></button>
+                <button class="dot" data-slide="2" type="button"></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Fale <span>Comigo</span></h2>
+        <p class="contact-subtitle">
+            Tem uma ideia, projeto ou oportunidade? Vamos conversar.
+        </p>
+
+        <div class="contact-container">
+            <form id="contact-form">
+                <div class="contact-row">
+                    <input type="text" name="name" placeholder="Seu nome" required>
+                    <input type="email" name="email" placeholder="Seu email" required>
+                </div>
+
+                <textarea name="message" placeholder="Sua mensagem" required></textarea>
+
+                <button type="submit" class="contact-btn">Enviar mensagem</button>
+            </form>
+
+            <div class="contact-alt">
+                <p>Ou se preferir:</p>
+
+                <a href="https://wa.me/5517992627106?text=Olá,%20Lucas.%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar." target="_blank" class="whatsapp-btn">
+                    <i class="bx bxl-whatsapp"></i>
+                    Falar pelo WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="social-icons">
+            <a href="#">
+                <i class="bx bxl-github"></i>
+            </a>
+            <a href="#">
+                <i class="bx bxl-linkedin-square"></i>
+            </a>
+            <a href="#">
+                <i class="bx bxl-instagram-alt"></i>
+            </a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#services">Projetos</a>
+            </li>
+            <li>
+                <a href="#about">Sobre Mim</a>
+            </li>
+            <li>
+                <a href="#contact">Contato</a>
+            </li>
+        </ul>
+
+        <p class="copyright">
+            c Lucas Ribeiro | All Rights Reserved
+        </p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
