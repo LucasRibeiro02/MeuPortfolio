@@ -99,10 +99,10 @@ const projectGalleries = {
         title: "Controle de Veículos",
         subtitle: "Mais telas do aplicativo",
         images: [
-            "img/controleDeVeiculo5.png",
-            "img/controleDeVeiculo4.png",
-            "img/controleDeVeiculo3.png",
-            "img/controleDeVeiculo6.png"
+            "controleDeVeiculo5.png",
+            "controleDeVeiculo4.png",
+            "controleDeVeiculo3.png",
+            "controleDeVeiculo6.png"
         ]
     },
 
@@ -110,13 +110,13 @@ const projectGalleries = {
         title: "Automação de Aprovação de Compras",
         subtitle: "Fluxo automatizado com Power Automate e Microsoft Teams",
         images: [
-            "img/aprovacao5.png",
-            "img/aprovacao6.png",
-            "img/aprovacao7.png",
-            "img/aprovacao1.png",
-            "img/aprovacao2.png",
-            "img/aprovacao3.png",
-            "img/aprovacao4.png"
+            "aprovacao5.png",
+            "aprovacao6.png",
+            "aprovacao7.png",
+            "aprovacao1.png",
+            "aprovacao2.png",
+            "aprovacao3.png",
+            "aprovacao4.png"
         ]
     },
 
